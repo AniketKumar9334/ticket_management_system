@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket manegment aap</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h1>Ticket Management App</h1>
+        <div >
+            <input type="text" placeholder="Title" id="title">
+            <input type="text" placeholder="Description" id="description">
+            <select name="status" id="status">
+                <option value="Open">Open</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Closed">Closed</option>
+            </select>
+            <input type="datetime-local"  name="dueDate" id="dueDate">
+            <button id="submit">Create Ticket</button>
+        </div>
+      </div>
+      <div class="bottom">
+        <table border="1">
+            <thead>
+              <tr>
+                <th >Ticket ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>status</th>
+                <th>DueDate</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+          </table>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
